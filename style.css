@@ -1,0 +1,224 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* LANDING PAGE */
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+  }
+
+  .home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Main image for landing page added in CSS*/
+  .home-inner {
+    background-image: url(img/do-sth-great-lower2.jpg);
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    filter: brightness(70%);
+  }
+
+  .navbar {
+      padding-bottom: -0px;
+  }
+
+  .caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+  }
+
+  .navbar-brand {
+    color: rgb(103, 103, 103);
+    margin-bottom: 10px;
+  }
+
+  .btn-main {
+      margin-top: 220px;
+  }
+
+
+ /* Glowing Button */
+
+  .btn-main {
+    width: 200px;
+    height:50px;
+    border-radius:180px;
+    position:relative;
+    margin-top: -10px;
+    background: linear-gradient(60deg, #0073e6, #0b0583, #385dee, #2e2edc, #2d69e3, #071aae, #0216ac, #020d61);
+    cursor:pointer;
+    line-height:12px;
+  }
+  
+  .btn-main:before {
+    content:'';
+    z-index:1;
+    position:absolute;
+    display:block;
+    width:80%;
+    height:70%;
+    top:15%;
+    left:10%;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(15px);
+    opacity:0;
+    background: linear-gradient(60deg, #33c3f7, #70cbed, #70cbed, #70cbed, #70cbed, #70cbed, #70cbed, #70cbed);
+  }
+  
+  .btn-main:hover:before {
+    opacity:1;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(25px);
+    background: linear-gradient(60deg, #33c3f7, #70cbed, #70cbed, #70cbed, #70cbed, #70cbed, #70cbed, #70cbed);  
+  }
+  
+  .btn-main:after {
+    content:'GO TO PORTFOLIO';
+    text-align:center;
+    line-height:40px;
+    font-size:18px;
+    color:rgba(235,235,235,1);
+    font-weight:bold;
+    z-index:5;
+    position:absolute;
+    display:block;
+    border-radius:180px;
+    width:92%;
+    height:80%;
+    top:10%;
+    left:4%;  
+    background-color:rgb(19, 20, 22);
+  }
+
+  /* Glowing Button END */
+
+  #main-h1 {
+    text-transform: uppercase;
+    font-weight: 1000;
+    color:rgb(248, 250, 234);
+    letter-spacing: 5px;
+    text-shadow: .1rem .1rem .5rem black;
+    position:absolute;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    top: -180px;
+    /*text-shadow: 0 0 0.15em #1da9cc; */
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+  }
+
+  #main-h3{
+    text-transform: uppercase;
+    font-weight: 1000;
+    color:rgb(248, 250, 234);
+    letter-spacing: 3px;
+    text-shadow: .1rem .1rem .5rem black;
+    position:absolute;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    top: -120px;
+
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6, 0 0 40px #0073e6;
+  }
+
+
+  /* LANDING PAGE END */
+
+  /* CARDS */
+
+  h1.cards {
+    font-size: 36px;
+    line-height: 40px;
+    margin: .5em 0 1em 0;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+    position: relative;
+    color: #0073e6;
+    text-align: center;
+    text-shadow: 0 2px 2px #0073e6;
+  }
+
+  hr {
+ 
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #0073e6, rgba(0, 0, 0, 0));
+    margin-bottom: 3rem;
+  }
+
+
+/* Icons */
+.fa-js-square{
+  color: #eed52e;
+}
+
+.fa-html5{
+  color: #e44d32;
+}
+
+.fa-css3-alt{
+  color: #3994cf;
+}
+
+.fa-bootstrap{
+  color: #60408c;
+}
+
+/* About me page */
+#quote {
+  font-family: 'Dancing Script', cursive;
+}
+
+#about-page {
+  margin-top: -35px;
+  background-color:#b9d5f2;
+}
+
+#social {
+  margin-top: -20px;
+}
+
+/* Contant Page */
+
+#send-button {
+    border-color: blue;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #2e2edc inset, 0 0 0 0 #2e2edc;
+    transition: all 150ms ease-in-out;
+}
+
+#send-button:hover {
+  box-shadow: 0 0 10px 0 #5959e6 inset, 0 0 10px 4px #2e2edc;
+}
+
+
+
+
+
+

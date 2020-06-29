@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d209db41e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bellota Font -->  
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <!-- Roboto Font -->  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Dancing Script Font -->  
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Dita Pesek Portfolio</title>
+</head>
+<body>
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-md navbar-darkt bg-dark fixed-top">
+        <a class="navbar-brand" href="#home">Dita Pesek Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="https://github.com/DeltaForce14" class="nav-link waves-effect waves-light" target="_blank">
+                    <i class="fab fa-github fa-2x" data-fa-transform="shrink-3 down-4"></i>
+                </a>
+            </li>
+          </ul>
+        </div>  
+      </nav> <!--Navbar END-->
+
+
+      <!-- LANDING PAGE -->
+      <!-- Reponsive image background --> 
+      
+    <div class="landing" id="home">
+      <div class="home-wrap">
+        <div class="home-inner"></div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Landing Page Text --> 
+      <div class="caption text-center">
+        <h1 id="main-h1">Dita Pesek</h1>
+        <h3 id="main-h3">Front End / JS Developer</h3>
+        <a class="btn btn-outline-light btn-lg btn-main" href="#portfolio">GO TO PORTFOLIO</a>
+      </div>
+      <!-- ENDLANDING PAGE -->
+
+      <!-- PORTFOLIO -->
+      <div class="jumbotron">
+      <div class="container" id="portfolio">
+          <h1 class="cards">PORTFOLIO</h1>
+          <hr>
+          <!-- FIRST ROW CARDS -->
+          <div class="card-deck text-center">
+            <div class="card">
+              <img class="card-img-top" src="/img/painting-database.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Painting Database</h5>
+                <p class="card-text">App built with Vanilla JS (ES6) and Skeleton. User can enter Name of Painting, Author, Reference 
+                  Number and Price.</p>
+                  <a class="btn btn-secondary btn-md" href="/js-paintings-catalogue/catalogue.html" target="_blank">LAUNCH APP</a>
+              </div>
+              <div class="card-footer">
+                <i class="fab fa-js-square fa-3x" data-fa-transform=""></i>
+                <i class="fab fa-html5 fa-3x"></i>
+                <i class="fab fa-css3-alt fa-3x"></i>
+
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="/img/loan-calculator.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Loan Calculator</h5>
+                <p class="card-text">Built with Vanilla JS (ES6) and Bootstrap. User can calculate monhtly repayments, total interest
+                  they have to pay and total loan payments on their compound interest loan. 
+                </p>
+                <a class="btn btn-secondary btn-md" href="/js-loan-calculator/index.html" target="_blank">LAUNCH APP</a>
+              </div>
+              <div class="card-footer">
+                <i class="fab fa-js-square fa-3x" data-fa-transform=""></i>
+                <i class="fab fa-html5 fa-3x"></i>
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <i class="fab fa-bootstrap fa-3x"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="/img/github-finder.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">GitHub Users Finder</h5>
+                <p class="card-text">App built with Vanilla JS (ES6) and Skeleton using GitHub API to find users and 
+                  display information about them and their latest repos. Async, await used to fetch the data.
+                </p>
+                <a class="btn btn-secondary btn-md" href="/js-github-finder-api/index.html" target="_blank">LAUNCH APP</a>
+              </div>
+              <div class="card-footer">
+                <i class="fab fa-js-square fa-3x" data-fa-transform=""></i>
+                <i class="fab fa-html5 fa-3x"></i>
+                <i class="fab fa-css3-alt fa-3x"></i>
+              </div>
+            </div>
+          </div><!-- FIRST ROW CARDS END -->
+          <br><br>
+          <!-- SECOND ROW CARDS -->
+          <div class="card-deck text-center">
+            <div class="card">
+              <img class="card-img-top" src="/img/number-guesser.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Number Guesser</h5>
+                <p class="card-text">App built with Vanilla JS (ES6) and Materialize. User has to guess number from 1 to 10.
+                  There are only three tries to guess the number. </p>
+                  <a class="btn btn-secondary btn-md" href="/js-number-guesser/index.html" target="_blank">LAUNCH APP</a>
+              </div>
+              <div class="card-footer">
+                <i class="fab fa-js-square fa-3x" data-fa-transform=""></i>
+                <i class="fab fa-html5 fa-3x"></i>
+                <i class="fab fa-css3-alt fa-3x"></i>
+
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="/img/chuck-norris-jokes.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Chuck Norris Joke Generator</h5>
+                <p class="card-text">Built with Vanilla JS (ES6) and Skeleton. User can enter number of jokes and 
+                  the app will generate random Chuck Norris jokes. Third party API used.
+                </p>
+                <a class="btn btn-secondary btn-md" href="/js-chuck-norris-api/index.html" target="_blank">LAUNCH APP</a>
+              </div>
+              <div class="card-footer">
+                <i class="fab fa-js-square fa-3x" data-fa-transform=""></i>
+                <i class="fab fa-html5 fa-3x"></i>
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <i class="fab fa-bootstrap fa-3x"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="/img/flower-course-website.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Flower Arrangment Course Template Website</h5>
+                <p class="card-text">Website built with Bootstrap for flower arrangement course. One-page website. 
+                </p>
+                <a class="btn btn-secondary btn-md" href="https://deltaforce14.github.io/flower-course-webpage/" target="_blank">LAUNCH WEBSITE</a>
+              </div>
+              <div class="card-footer">
+                <i class="fab fa-js-square fa-3x" data-fa-transform=""></i>
+                <i class="fab fa-html5 fa-3x"></i>
+                <i class="fab fa-css3-alt fa-3x"></i>
+              </div>
+            </div>
+          </div><!-- SECOND ROW CARDS END -->
+      </div> <!-- Container End -->
+    </div>
+    <!-- PORTFOLIO END -->
+
+    <!-- ABOUT PAGE START -->
+    <div id="about-page">
+      <div class="container" id="about-me">
+          <div class="row">
+            <div class="col-md-6">
+              <blockquote>
+                <div>
+                  <i class="fas fa-quote-left mt-3"></i>
+                  <br>
+                  &nbsp; <h3 id="quote"><em>First, solve the problem. Then, write the code.</em></h3>
+                </div>
+              </blockquote>
+              <br><br>
+              <p>I’m a junior front end developer specialising in JavaScript. I have been interested in technology since 
+                I was young though growing up in a post communistic state where it was very unusual for 
+                women to study technical subjects it never seemed like an option to study Computing. So 
+                I learnt the standard human languages. I speak Czech, German, English, Italian, Russian and 
+                language of hypnosis. When I arrived to London and entered world on start ups as a project 
+                manager it became clear to me that programming was a skill I wanted to gain. So in February 
+                2019 I began my journey to become a developer. In June 2019 I signed up for bachelors degree 
+                in Computing with focus on web development with Open University which I’m studying part time 
+                and started a work experience for a start up called Skylight as a front end developer. 
+                <br><br>
+                The moment when I wrote my first code I knew that I was destined to be a programmer. I enjoy the blend 
+                of logical and creative skills, the ability to explore, learn and get better. I love working with JavaScript and 
+                React building apps. I am curious, enjoy to create. I can spend hours doing puzzles. 
+                <br><br>
+                Fun Fact: I am in Spiderman: Far From Home talking to Spiderman in Czech giving him Tony Stark’s glasses:)</p>
+                <hr>
+                <h5 id="social">GitHub and LinkedIn</h5>
+                <div class="row">
+                  <a href="https://github.com/DeltaForce14" class="nav-link waves-effect waves-light" target="_blank">
+                    <i class="fab fa-github fa-3x" data-fa-transform="shrink-3 down-4"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/dita-pesek-7339a219b/" class="nav-link waves-effect waves-light" target="_blank">
+                    <i class="fa fa-linkedin fa-3x" data-fa-transform="shrink-3 down-4"></i>
+                  </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <img src="/img/DitaPesek.jpg" alt="" class=" mt-2 mb-2 img-fluid rounded" >
+            </div>
+          </div><!-- Row End -->
+      </div> <!-- Container End -->
+    </div>
+    <!-- ABOUT PAGE END -->
+
+    <!-- CONTACT ME START -->
+    <div class="container"> 
+      <div class="col-md-6 mx-auto"> 
+        <h3 class="mt-5">Send me a message</h3>
+
+        <form action="https://formsubmit.co/19583db4b28b06e2e29a88ee19c3d47f" method="POST">
+
+          <!-- Name Input -->
+          <div class="form-group mt-4">
+            <div class="input-group">
+                <input type="text" class="form-control" name="name" placeholder="name">
+            </div>
+          </div>
+
+          <!-- Email Input -->
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+              </div>
+                <input type="email" class="form-control" name="email" placeholder="email">
+              </div>
+          </div>
+
+          <!-- Message Input -->
+          <div class="form-group">
+            <div class="input-group">
+                <input type="text" class="form-control" name="text" placeholder="your message">
+
+            </div>
+          </div>
+
+          <!-- Button -->
+          <button class="mt-4 btn btn-primary btn-block" type="submit" id="send-button">SEND</button>
+        </form>
+      </div>
+    </div>  <!-- Container End -->
+    <!-- CONTACT ME START -->
+
+    <footer class="mt-5 p-3 text-center bg-light">
+      Dita Pesek &copy
+    </footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+</body>
+</html>
